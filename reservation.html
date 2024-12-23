@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airing 예약 확인</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      max-width: 80px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      margin-top: 10px;
+      font-size: 1.8em;
+    }
+
+    p {
+      text-align: center;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 3px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #2A30C4;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #09090B;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #777;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Airing Logo">
+    </div>
+
+    <h1>Airing 에어링 탑승 예약 확인</h1>
+
+    <p>
+      안녕하세요! 에어링입니다 🛫<br>
+      아래 정보를 입력하시면 예약 내역을 확인하실 수 있습니다.
+    </p>
+
+    <form id="reservation-form">
+      <div class="form-group">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">연락처</label>
+        <input type="text" id="contact" name="contact" placeholder="숫자만 입력하세요" required>
+      </div>
+
+      <button type="submit" class="btn">예약 내역 확인</button>
+    </form>
+
+    <div id="reservation-details" style="display: none; margin-top: 20px;">
+      <h2>예약 내역</h2>
+      <p id="details-content"></p>
+    </div>
+
+    <div class="footer">
+      <p>문의 사항이 있으시면 airing-ku@naver.com 으로 연락주세요 💌</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const contact = document.getElementById('contact').value;
+
+      // Simulate API call
+      fetch(`/api/getReservation?name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data) {
+            document.getElementById('details-content').innerText = `
+              이름: ${data.name}\n
+              연락처: ${data.contact}\n
+              예약 내용: ${data.details}
+            `;
+            document.getElementById('reservation-details').style.display = 'block';
+          } else {
+            alert('예약 정보를 찾을 수 없습니다. 다시 확인해주세요.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('서버 오류가 발생했습니다. 나중에 다시 시도해주세요.');
+        });
+    });
+  </script>
+</body>
+</html>
