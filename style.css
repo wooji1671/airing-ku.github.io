@@ -316,7 +316,7 @@ h6 {
 }
 .team-detail img {
 	border-radius: 50%;
-	width: 70%;
+	width: 75;
 }
 .team-detail h4 {
 	color:#376FFF;
@@ -361,7 +361,7 @@ h6 {
 	padding:20px;
 }
 .slider .test-img img {
-	border: 12px solid #fff;
+	border: 8px solid #fff;
 	border-radius: 50%;
 	width: 100%;
 	height: auto;
@@ -576,6 +576,7 @@ h3 {
 	float: none;
 	width: 100%;
 	text-align: center;
+	/* text-align: center; */
 }
 .section-content {
 	margin-top: 40px;
