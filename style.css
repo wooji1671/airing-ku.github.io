@@ -361,25 +361,26 @@ h6 {
 	padding:20px;
 }
 .slider .test-img img {
-	border: 4px solid #fff;
+	border: 0px solid #fff;
 	border-radius: 50%;
 	width: 100%;
 	height: auto;
 }
 .test-img {
 	float: left;
-	width: 20%;
+	width: 19%;
+	margin-left: 1%;
 	margin-right:5%;
 }
 .test-text {
-	float: left;
-	width: 75%;
+	float: center;
+	width: 100%;
 }
 .slider .title {
 	display: block;
 	position: relative;
-	margin: 0 0 20px;
-	font-size: 1.125em;
+	margin: 0 0 25px;
+	font-size: 1.3em;
 	line-height: 1.25;
 }
 .slider .title span {
@@ -445,13 +446,40 @@ input {
 	border-radius: 8px;
 	background: #100F16;
 	background: linear-gradient(to right, #100F16, #100F16);
+	gap: 20px;
 }
 .contact-item {
-	margin:23px 0px;
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	margin:20px 8px;
 }
+
+.contact-item .media-body {
+	flex: 10; /* 텍스트 영역을 최대한 늘림 */
+	text-align: left; /* 텍스트를 왼쪽 정렬 */
+  }
 .contact-item i {
-	font-size: 20px;
-}
+	font-size: 24px; /* 아이콘 크기 */
+	margin-left: 15px; /* 텍스트와 아이콘 사이의 간격 */
+	text-align: left; /* 아이콘 오른쪽 정렬 */
+	display: column;
+	align-items: left; /* 아이콘 세로 중앙 정렬 */
+  }
+  
+.contact-item .media-body {
+	display: flex;
+	flex-direction: column; /* 텍스트를 세로 정렬 */
+	justify-content: center; /* 텍스트를 세로 중앙 정렬 */
+	text-align: left; /* 텍스트를 왼쪽 정렬 */
+  }
+
+.contact-text {
+	display: flex;
+	flex-direction: column; /* 텍스트들 세로 정렬 */
+	text-align: left;
+  }
+
 .contact-item p {
 	line-height: 20px;
 	margin: 0;
