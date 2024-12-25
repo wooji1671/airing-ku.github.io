@@ -51,7 +51,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/main.gif" style="height:400px; width:400;" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-4 col-sm-12"> <img src="images/main.gif" style="height:400px; width:400;"/> </div>
       </div>
     </div>
   </div>
@@ -481,16 +481,17 @@ $(window).on("load",function (){
 	var bodyScroll = $(window).scrollTop(),
 	navbar = $(".navbar");
 	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
-	navbar.addClass("nav-scroll");
-	}else{
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
-	navbar.removeClass("nav-scroll");
+if(bodyScroll > 50){
+	  $('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
+	  navbar.addClass("nav-scroll");
+	}
+else{
+    $('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
+    navbar.removeClass("nav-scroll");
 	}
 
-	$.scrollIt({
-	
+
+$.scrollIt({
 	easing: 'swing',      // the easing function for animation
 	scrollTime: 900,       // how long (in ms) the animation takes
 	activeClass: 'active', // class given to the active nav element
