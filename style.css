@@ -55,6 +55,7 @@ h6 {
 	color: #5786FF !important;
 }
 .navbar .navbar-brand {
+	max-width: 120px;
 }
 .navbar .nav-item {
 	margin: 10px 10px;
@@ -111,8 +112,8 @@ h6 {
 }
 .banner {
 	background: #100F16;
-	/* background: linear-gradient(to left, #100F16, #100F16); */
-	padding:100px 0px;
+	/* background: linear-gradient(to left, #100F16, #000000); */
+	padding:140px 0px;
 	position:relative;
 }
 .banner::before {
@@ -138,11 +139,11 @@ h6 {
 	width: 100%;
 }
 .banner-text {
-	padding-right:80px;
-	margin:40px 0px 0px;
+	padding-right:100px;
+	margin:10px 0px 0px;
 }
 .banner-text p {
-	margin:35px 0px;
+	margin:30px 0px;
 }
 .banner-text ul {
 	list-style: none;
@@ -162,11 +163,11 @@ h6 {
 	position:relative
 }
 .section-padding {
-	padding:80px 0px;
+	padding:50px 0px;
 }
 .sectioner-header {
 	width:69%;
-	margin:0 auto;
+	margin: 0 auto;
 }
 .line {
 	height: 2px;
@@ -537,7 +538,7 @@ input {
 .footer-copy p {
 	margin-bottom:0px;
 }
-@media all and (max-width:991px) {
+@media all and (max-width:120px) {
 .navbar .navbar-collapse {
 	overflow: auto;
 	background:  rgb(213, 198, 221);
@@ -559,7 +560,7 @@ input {
 }
 .banner-text {
 	padding-right: 0px;
-	margin: 30px 30px 0px;
+	margin: 10px 10px 0px;
 }
 h2 {
 	font-size: 50px;
@@ -572,9 +573,10 @@ h3 {
 }
 .banner-text p {
 	margin: 20px 0px;
+	font-size: 50px;
 }
 .banner-text ul li a img {
-	width: 140px;
+	width: 120px;
 	border-radius: 7px;
 }
 .sectioner-header {
