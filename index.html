@@ -44,7 +44,7 @@
           <div class="banner-text">
             <h2 class="white">Airing 에어링</h2>
             <h6 class="white">새벽 시간대에 인천공항까지 어떻게 가지? 고민하는 당신을 위한 맞춤형 셔틀버스</h6>
-            <p class="banner-text white">비슷한 상황의 사람들과 함께 저렴하게 셔틀을 이용하세요. <br>집에서 공항까지, 공항에서 집까지 환승 없이 이동하세요.</p>
+            <p class="banner-text white">비슷한 상황의 사람들과 함께 저렴하게 셔틀을 이용하세요.<br>집에서 공항까지, 공항에서 집까지 환승 없이 이동하세요.</p>
             <ul>
               <li><a href="https://tally.so/r/w8j46o"><img src="images/rev.png" style="width: 100px; height: auto;" class="wow fadeInUp rev-img" data-wow-delay="0.4s"/></a></li>
               <li><a href="#"><img src="images/rev-check.png" style="width: 127px; height: auto;" class="wow fadeInUp rev-check-img" data-wow-delay="0.7s"/></a></li>
@@ -74,19 +74,19 @@
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <img src="images/about1.png" style="width: 200px; height: auto;" alt="about1" class="about1" aria-hidden="true"></img>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.8s"> <img src="images/about1.png" style="width: 200px; height: auto;" alt="about1" class="about1" aria-hidden="true"></img>
                 <h5>간편하게</h5>
                 <p>이용 시간과 장소만 입력하세요! 탑승객 모집, 탑승 안내, 셔틀 운행까지 모두 에어링이 알아서 해결해 드려요.</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <img src="images/about2.png" style="width: 200px; height: auto;" alt="about2" class="about2" aria-hidden="true"></img>
+              <div class="icon-box wow fadeInUp" data-wow-delay="1s"> <img src="images/about2.png" style="width: 200px; height: auto;" alt="about2" class="about2" aria-hidden="true"></img>
                 <h5>저렴하게</h5>
                 <p>여럿이 함께 이동하는 만큼 합리적인 가격을 제공해요. 새벽 기준, 최대 nn% 경비를 절약하세요!</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <img src="images/about3.png" style="width: 200px; height: auto;" alt="about3" class="about3" aria-hidden="true"></img>
+              <div class="icon-box wow fadeInUp" data-wow-delay="1.2s"> <img src="images/about3.png" style="width: 200px; height: auto;" alt="about3" class="about3" aria-hidden="true"></img>
                 <h5>스마트하게</h5>
                 <p>에어링의 알고리즘 기술이 최적 동선의 맞춤 노선을 만들어요. 도보 10분 내로 편하게 셔틀에 탑승하세요!</p>
               </div>
@@ -283,7 +283,7 @@
         <div class="sectioner-header text-center">
           <h3>FAQ</h3>
           <span class="line"></span>
-          <p>더 궁금하신 점은 인스타그램 및 카카오톡 채널로 언제든 문의해 주세요. 빠르게 답변 드리겠습니다.</p>
+          <p>더 궁금하신 점은 카카오톡 채널 및 인스타그램으로 언제든 문의해 주세요. 빠르게 답변 드리겠습니다.</p>
         </div>
         <div class="section-content">
           <div class="row">
@@ -358,7 +358,7 @@
                 <div class="contact-item media"> <i class="fa fa-comments media-left media-right-margin" style="color: #ffffff; width: 27px;"></i>
                   <div class="media-body">
                     <p class="text-uppercase">카카오톡 채널</p>
-                    <a class="text-white" href="http://pf.kakao.com/_xbyHxln/chat">에어링</a> </p>
+                    <a class="text-white" href="http://pf.kakao.com/_xbyHxln">에어링</a> </p>
                   </div>
                 </div>
                 <div class="contact-item media"> <i class="fa-brands fa-instagram media-left media-right-margin" style="color: #ffffff; width: 27px;"></i>
@@ -463,13 +463,14 @@ $(window).on("scroll",function () {
 	var bodyScroll = $(window).scrollTop(),
 	navbar = $(".navbar");
 	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '160px');
+if(bodyScroll > 50){
+	$('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
 	navbar.addClass("nav-scroll");
 
-}else{
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '160px');
-	navbar.removeClass("nav-scroll");
+}
+  else{
+	  $('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
+	  navbar.removeClass("nav-scroll");
 }
 
 });
@@ -478,10 +479,10 @@ $(window).on("load",function (){
 	navbar = $(".navbar");
 	
 	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '160px');
+	$('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
 	navbar.addClass("nav-scroll");
 	}else{
-	$('.navbar-logo img').attr('src','images/logo.png').css('width', '160px');
+	$('.navbar-logo img').attr('src','images/logo.png').css('width', '120px');
 	navbar.removeClass("nav-scroll");
 	}
 
