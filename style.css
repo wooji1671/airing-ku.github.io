@@ -579,7 +579,7 @@ input {
 }
 @media all and (max-width:80x) {
 .nav-scroll .navbar-brand img, .navbar-brand img {
-	transform: scale(0.75) !important;
+	transform: scale(1) !important;
 	-webkit-transform: scale(0.75) !important;
 }
 .banner-text {
