@@ -116,7 +116,7 @@ h6 {
 	cursor: pointer;
 }
 .nav-scroll .navbar-toggler span {
-	color: #333;
+	color: #100F16;
 }
 .nav-scroll .nav-link:hover:after {
 	background-color: #2388ed;
@@ -127,7 +127,7 @@ h6 {
 .banner {
 	background: #100F16;
 	/* background: linear-gradient(to left, #100F16, #000000); */
-	padding:140px 0px;
+	padding:140px 0px 200px 0px;
 	position:relative;
 }
 .banner::before {
@@ -153,8 +153,8 @@ h6 {
 	width: 100%;
 }
 .banner-text {
-	padding-right:100px;
-	margin:10px 0px 0px;
+	padding-right: 0;
+	margin:45px 0px 0px;
 }
 .banner-text p {
 	margin:30px 0px;
@@ -177,7 +177,7 @@ h6 {
 	position:relative
 }
 .section-padding {
-	padding:100px 0px;
+	padding:90px 0px 60px;
 }
 .sectioner-header {
 	width:69%;
@@ -204,7 +204,7 @@ h6 {
 	font-size: 17px;
 }
 .section-content {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .icon-box {
 	margin-bottom:50px;
@@ -295,7 +295,7 @@ h6 {
 .video-popup .iframe-src {
 	width: 100%;
 	height: 0;
-	padding-top: 56.3%;
+	padding-top: 110px;
 	position: relative;
 	display: none;
 }
@@ -361,7 +361,7 @@ h6 {
 }
 .testimonial {
 	background: #100F16;
-	padding:100px 0px;
+	padding:110px 0px 80px 0px;
 	position:relative;
 }
 .testimonial::before {
@@ -525,7 +525,7 @@ input {
 }
 .download {
 	background: #100F16;
-	padding:100px 0px;
+	padding:80px 0px;
 	position:relative;
 }
 .download::before {
@@ -583,8 +583,8 @@ input {
 	-webkit-transform: scale(0.75) !important;
 }
 .banner-text {
-	padding-right: 0px;
-	margin: 10px 10px 0px;
+	padding: 100% 0px 100% 0px;
+	margin: 10px 0px 0px;
 }
 h2 {
 	font-size: 50px;
@@ -593,7 +593,7 @@ h3 {
 	font-size: 30px;
 }
 .section-padding {
-	padding: 40px 0px;
+	padding: 100% 0px 100% 0px;
 }
 .banner-text p {
 	margin: 20px 0px;
@@ -604,7 +604,8 @@ h3 {
 	border-radius: 7px;
 }
 .sectioner-header {
-	width: 90%;
+	width: 100%;
+	/* padding: ; */
 }
 .sectioner-header p {
 	font-size: 14px;
