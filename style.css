@@ -398,13 +398,18 @@ h6 {
 .slider .test-img img {
 	border: 0px solid #fff;
 	border-radius: 50%;
-	width: 100%;
+	width: 90%;
 	height: auto;
+	/* justify-content: center !important;
+	align-items: center;  */
 }
 .test-img {
 	float: left;
+	/* justify-content: center !important;
+	align-items: center; */
 	width: 19%;
 	margin-left: 1%;
+	margin-top: 1%;
 	margin-right:3%;
 }
 .test-text {
