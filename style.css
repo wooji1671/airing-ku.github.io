@@ -90,7 +90,8 @@ h6 {
 	color: #5786FF;
 }
 .navbar-style2 .active:after, .navbar-style2 .nav-link:after {
-	display: none;
+	/* display: none; */
+	color:#100F16;
 }
 .nav-scroll {
 	background: #100F16;
@@ -114,12 +115,14 @@ h6 {
 }
 .nav-scroll .navbar-toggler {
 	cursor: pointer;
+	position: fixed;
 }
 .nav-scroll .navbar-toggler span {
-	color: #100F16;
+	color: #5786FF;
+	
 }
 .nav-scroll .nav-link:hover:after {
-	background-color: #2388ed;
+	background-color: #5786FF;
 }
 .nav-scroll .active {
 	position: relative;
