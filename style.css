@@ -17,7 +17,7 @@ a:hover {
 h1, h2, h3 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight: 700;
-	font-size: 35px
+	font-size: 45px
 }
 h4, h5 {
 	font-family: 'Pretendard', sans-serif;
@@ -27,13 +27,14 @@ h4, h5 {
 h6 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight:500;
-	font-size: 20px;
+	font-size: 21px;
 	/* margin: 0px 0px 10px; */
 
 }
 .white {
 	color:#ffffff !important;
 	font-family: 'Pretendard', sans-serif;
+	font-size: 16px;
 }
 .black {
 	color:#000000;
@@ -44,18 +45,19 @@ h6 {
 	right: 0;
 	left: 0;
 	width: 100%;
-	padding-left: 0;
+	padding-left: 40px;
 	padding-right: 0;
 	min-height: 50px;
 	line-height: 50px;
-	background: transparent;
+	background: #100F16;
+	transition: background 0.3s ease, color 0.3s ease;
 	z-index: 1030;
 }
 .navbar .active {
 	color: #5786FF !important;
 }
 .navbar .navbar-brand {
-	max-width: 120px;
+	max-width: 100px;
 }
 .navbar .navbar-brand img {
 	-webkit-transform: scale(1); /* 초기 크기를 명시적으로 설정 */
@@ -96,9 +98,9 @@ h6 {
 .nav-scroll {
 	background: #100F16;
 	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
-	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .nav-scroll .navbar-nav > li > a {
 	color: #fff;
@@ -570,50 +572,66 @@ input {
 .footer-copy p {
 	margin-bottom:0px;
 }
-@media all and (max-width:80px) {
+@media all and (max-width:100%) {
 .navbar .navbar-collapse {
+	width: 100%;
+	position: fixed;
 	overflow: auto;
-	background:  rgb(213, 198, 221);
+	/* background:  rgb(74, 41, 92); */
 	color: #fff !important;
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px 0 0 100px;
+	/* transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease; */
 }
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
 }
 #contact_form {
-	margin-bottom:30px;
+	margin-bottom:5px;
 }
 }
-@media all and (max-width:80x) {
-.nav-scroll .navbar-brand img, .navbar-brand img {
-	transform: scale(1) !important;
-	-webkit-transform: scale(0.75) !important;
-}
-.banner-text {
-	padding: 100% 0px 100% 0px;
-	margin: 10px 0px 0px;
-}
-h2 {
-	font-size: 50px;
-}
-h3 {
-	font-size: 30px;
-}
-.section-padding {
-	padding: 100% 0px 100% 0px;
-}
-.banner-text p {
-	margin: 20px 0px;
-	font-size: 50px;
-}
+@media all and (max-width: 100%) {
+    .nav-scroll .navbar-brand img, .navbar-brand img {
+        transform: scale(1) !important;
+        -webkit-transform: scale(1) !important; /* 스케일을 동일하게 설정 */
+        max-width: 100px; /* 이미지 크기 고정 */
+	}
+
+    .banner-text {
+        padding: 20px 10px; /* 상하 20px, 좌우 10px */
+        margin: 10px 10px; /* 상하좌우 10px */
+        font-size: 18px; /* 글씨 크기 조정 */
+    }
+	h1 {
+        font-size: 28px; /* 헤딩 크기 적절히 설정 */
+        margin: 10px 0; /* 상하 여백 추가 */
+    }
+
+	h2 {
+        font-size: 12px; /* 적절한 크기로 수정 */
+        margin: 10px 0; /* 상하 여백 추가 */
+    }
+
+    h3 {
+        font-size: 10px;
+        margin: 8px 0; /* 상하 여백 추가 */
+    }
+
+    .section-padding {
+        padding: 40px 1px; /* 상하 40px, 좌우 15px */
+    }
+
+    .banner-text p {
+        margin: 10px 0; /* 글씨 주변 여백 수정 */
+        font-size: 16px; /* 텍스트 크기 조정 */
+    }
 .banner-text ul li a img {
 	width: 120px;
-	border-radius: 7px;
+	border-radius: 10px;
 }
 .sectioner-header {
 	width: 100%;
-	/* padding: ; */
+	padding: 0px 0px;
 }
 .sectioner-header p {
 	font-size: 14px;
@@ -679,4 +697,11 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden; 
 }
