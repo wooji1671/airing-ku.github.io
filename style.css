@@ -1,6 +1,7 @@
 * {
 	padding:0;
 	margin:0;
+	
 }
 
 
@@ -580,17 +581,25 @@ input {
 	/* background:  rgb(74, 41, 92); */
 	color: #fff !important;
 	text-align: center;
-	padding: 10px 0 0 100px;
+	/* padding: 10px 0 0 100px; */
 	/* transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease; */
+	align-items: center;
 }
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
 }
+
+/* element.style {
+	height: auto;
+	width: 100%;
+	align-items: center;
+} */
+
 #contact_form {
 	margin-bottom:5px;
 }
 }
-@media all and (max-width: 100%) {
+@media all and (max-width: 50%) {
     .nav-scroll .navbar-brand img, .navbar-brand img {
         transform: scale(1) !important;
         -webkit-transform: scale(1) !important; /* 스케일을 동일하게 설정 */
@@ -695,7 +704,7 @@ input {
 	width: 120px;
 }
 .footer-copy p {
-	font-size: 10px;
+	font-size: 5px;
 }
 }
 
