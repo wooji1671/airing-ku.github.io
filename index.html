@@ -223,7 +223,7 @@
                   <li>모집 마감: 1/17 (금) 자정</li>
                   <li>노선 생성 안내: 1/18 (토) 18시</li>
                 </ul>         
-              <div class="pricing-button">
+              <div class="button">
                 <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
               </div>
             </div>
@@ -235,7 +235,7 @@
                   <li>모집 마감: 1/24 (금) 자정</li>
                   <li>노선 생성 안내: 1/25 (토) 18시</li>
                 </ul>         
-              <div class="pricing-button">
+              <div class="button">
                 <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
               </div>
             </div>
@@ -244,11 +244,11 @@
             <div class="pricing-card">
               <h1>2/3 (월)</h1>  
               <h3>42,0000원</h3>
-                <ul>
+              <ul>
                   <li>모집 마감: 1/31 (금) 자정</li>
                   <li>노선 생성 안내: 2/1 (토) 18시</li>
-                </ul>         
-              <div class="pricing-button">
+              </ul>         
+              <div class="button">
                 <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
               </div>
             </div>
@@ -342,7 +342,7 @@
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/user/user2.png" alt="Placeholder" width="200" height="200"></div>
-                <div class="test-text"><span class="title"><span>OOO</span>보부상 대학생</span> Euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v</div>
+                <div class="test-text"><span class="title"><span>이O영</span>보부상 대학생</span> Euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v</div>
               </div>
               <div class="slider-item">
                 <div class="test-img"><img src="images/user/user1.png" alt="Placeholder" width="200" height="200"></div>
@@ -496,14 +496,13 @@
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
 
-<script> 
-  function showDriver() {
-  console.log("showDriver function is loaded.");
-  window.location.href = "./showdriver.html";
-}
-</script>
 <script>
-	wow = new WOW();
+  function showDriver() {
+    <!-- console.log("showDriver function is loaded."); -->
+    window.location.href = "./showdriver.html";
+  }
+
+  wow = new WOW();
 	wow.init();
 $(document).ready(function(e) {
 

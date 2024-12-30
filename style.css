@@ -476,20 +476,21 @@ h6 {
 
 }
 
-.pricing-button a:hover {
-    background: #2c55bd !important;
-}
-
-.pricing-button a {
+.button a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background:  #27254e;
+    background: #27254e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
-	cursor: pointer; /* 클릭 가능한 상태 추가 */
+    cursor: pointer;
+    text-align: center;
+}
+
+.button a:hover {
+    background: #2c55bd !important; /* Hover 효과 */
 }
 
 
