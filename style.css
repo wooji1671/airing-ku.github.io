@@ -3,6 +3,13 @@
 	margin:0;
 	
 }
+.col-md-12 {
+	margin: 30px auto 30px auto;
+}
+/* .container {
+	margin: 30px auto 30px auto;
+	padding: 30px auto 30px auto;
+} */
 /* <body>
 
 	<style>
@@ -96,10 +103,15 @@ h1, h2 {
 h3 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight: 700;
-	font-size: 38px
+	font-size: 35px
 }
 
-h4, h5 {
+h4 {font-family: 'Pretendard', sans-serif;
+	font-weight:550;
+	font-size: 28px
+}
+
+h5 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight:600;
 	font-size: 25px
@@ -115,6 +127,7 @@ h6 {
 	color:#ffffff !important;
 	font-family: 'Pretendard', sans-serif;
 	font-size: 16px;
+	/* margin: 0 auto 0 auto; */
 }
 .black {
 	color:#000000;
@@ -262,11 +275,23 @@ h6 {
 	position:relative
 }
 .section-padding {
-	padding:70px 0px 40px; 
+	padding: 40px auto 40px auto; 
+	
 }
 .sectioner-header {
 	width:69%;
-	margin: 30px auto 10px auto;
+	margin: 60px auto 20px auto;
+	padding:40px auto 40px auto; 
+}
+.sectioner-header-2 {
+	width:69%;
+	margin: 30px auto 30px auto;
+	padding:40px auto 40px auto; 
+}
+.sectioner-header-3 {
+	width:69%;
+	margin: 0px auto 30px auto;
+	padding:40px auto 40px auto; 
 }
 .line {
 	height: 2px;
@@ -287,9 +312,14 @@ h6 {
 .sectioner-header p {
 	color:#818992;
 	font-size: 17.5px;
+
 }
 .section-content {
-	margin-top: 50px;
+	margin: 5px 10px 5px 10px ;
+}
+.section-content a{
+	padding-left: 8px;
+	padding-right: 8px
 }
 .icon-box {
 	margin-bottom:50px;
@@ -399,7 +429,7 @@ h6 {
 	font-size: 16px;
 }
 .media-right-margin {
-	margin-right:25px;
+	margin-right:20px;
 }
 .single-feature p {
 	font-size: 13px;
@@ -430,7 +460,7 @@ h6 {
 .pricing-container {
 	font-family: 'Pretendard', sans-serif;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .pricing-card {
@@ -450,35 +480,38 @@ h6 {
 }
 
 .pricing-card h3 {
-    font-size: 24px;
+    font-size: 23px;
     color: #818992;
-    margin: 10px 0;
+	margin: 5px auto 5px auto;
+	padding: 5px auto 5px auto;
 }
 
 .pricing-card h1 {
-    font-size: 30px;
+    font-size: 27px;
     color: #000;
-    margin: 10px 0;
-	padding: 2px auto 2px auto;
+    margin: 10px auto 10px auto;
+	padding: 5px auto 5px auto;
 }
 
 .pricing-card ul {
     list-style: none;
-    padding: 2px auto 2px auto;
-    margin: 0px 0;
+    padding: 2px auto 0px auto;
+    /* margin: 4px auto 0px auto; */
 }
 
 .pricing-card ul li {
     font-size: 16px;
     color: #000;
-    /* margin: 0px 0px 0px; */
+    margin: 15px auto 0px auto;
+	padding: 1px auto 0px auto;
 	text-align: center; /* 추가: 수직 가운데 정렬 */
+	justify-items: center;
 
 }
 
 .button a {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 18px;
     padding: 10px 20px;
     background: #27254e;
     color: #fff;
@@ -487,12 +520,12 @@ h6 {
     transition: background 0.3s ease;
     cursor: pointer;
     text-align: center;
+	
 }
 
 .button a:hover {
-    background: #2c55bd !important; /* Hover 효과 */
+	background: #2c55bd !important; /* Hover 효과 */
 }
-
 
 .team {
 	background: #fafafa;
@@ -514,7 +547,7 @@ h6 {
 }
 .testimonial {
 	background: #100F16;
-	padding:110px 0px 80px 0px;
+	padding: 60px 0px 60px 0px;
 	position:relative;
 }
 .testimonial::before {
@@ -544,6 +577,7 @@ h6 {
 	background: rgba(255, 255, 255, 0.81) !important;
 	border-radius: 5px !important;
 	box-shadow:none !important;
+	margin: 20px 10px 10px 10px;
 }
 .slider-item {
 	padding:20px;
@@ -685,7 +719,8 @@ input {
 }
 .download {
 	background: #100F16;
-	padding: 40px 0px;
+	padding: 70px auto 70px auto;
+	/* margin: 30px auto 30px auto; */
 	position:relative;
 }
 .download::before {
@@ -703,7 +738,7 @@ input {
 }
 .download ul li {
 	display: inline-block;
-	margin: 0px 10px 10px 0px;
+	margin: 3px auto 3px auto;
 }
 .download ul li a {
 	display: block;
@@ -711,6 +746,9 @@ input {
 .download ul li a img {
 	width: 150px;
 	border-radius: 7px;
+} 
+.download p{
+
 }
 .footer-copy {
 	background: #ffffff;
@@ -767,20 +805,20 @@ input {
 
 	h2 {
         /* font-size: 12px; 적절한 크기로 수정 */
-        margin: 10px 0; /* 상하 여백 추가 */
+        /* margin: 10px 0; 상하 여백 추가 */
     }
 
     h3 {
         /* font-size: 10px; */
-        margin: 8px 0; /* 상하 여백 추가 */
+        /* margin: px 0; 상하 여백 추가 */
     }
 
     .section-padding {
-        padding: 40px 1px; /* 상하 40px, 좌우 15px */
+        padding: 60px 1px; /* 상하 40px, 좌우 15px */
     }
 
     .banner-text p {
-        margin: 10px 0; /* 글씨 주변 여백 수정 */
+        margin: 00px 0; /* 글씨 주변 여백 수정 */
         font-size: 16px; /* 텍스트 크기 조정 */
     }
 .banner-text ul li a img {
@@ -832,7 +870,9 @@ input {
 	/* text-align: center; */
 }
 .section-content {
-	margin-top: 10px;
+	/* margin-top: 10px; */
+	align-items: center;
+	/* padding: 0 101 0 */
 }
 .faq-content {
 	margin: 10px 0px;
