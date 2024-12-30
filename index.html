@@ -205,12 +205,53 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="sectioner-header text-center white" style="padding-top: 20px">
+        <div class="sectioner-header text-center white" style="padding-top: 0px">
           <h3>사전 체험 신청하기</h3>
           <span class="line"></span>
-          <p style="color:#818992; font-size: 17px;">정식 서비스 출시 전, 사전 체험을 통해 에어링의 편리함을 먼저 경험해 보세요!<br>현재 사전 체험은 **구, **구, **구에 한정하여 운영됩니다.</p>
+          <p style="color:#818992; font-size: 17px;">정식 서비스 출시 전, 사전 체험을 통해 에어링의 편리함을 먼저 경험해 보세요!<br>현재 사전 체험은 서울 지역에서만 사전 체험이 가능합니다.</p>
         </div>
       </div>
+      <div class="sectioner-header text-center white" style="padding-top: 20px">
+        <h3 style="font-size: 29px; padding-top: 10px; padding-bottom: 20px;">요금 안내</h3>
+      
+        <div class="pricing-container">
+            <!-- STARTUP Plan -->
+            <div class="pricing-card">
+              <h1>1/20 (월)</h1>  
+              <h3>27,0000원</h3>
+              <ul>
+                  <li>모집 마감: 1/17 (금) 자정</li>
+                  <li>노선 생성 안내: 1/18 (토) 18시</li>
+              </ul>
+            <div class="pricing-button">
+                <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
+            </div>
+            <!-- STANDARD Plan -->
+            <div class="pricing-card">
+              <h1>1/27 (월)</h1>  
+              <h3>32,0000원</h3>
+              <ul>
+                  <li>모집 마감: 1/24 (금) 자정</li>
+                  <li>노선 생성 안내: 1/25 (토) 18시</li>
+              </ul>
+            </div>
+            <div class="pricing-button">
+              <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
+            </div>
+    
+            <!-- BUSINESS Plan -->
+            <div class="pricing-card">
+              <h1>2/3 (월)</h1>  
+              <h3>42,0000원</h3>
+                <ul>
+                  <li>모집 마감: 1/31 (금) 자정</li>
+                  <li>노선 생성 안내: 2/1 (토) 18시</li>
+                </ul>         
+            </div>
+            <div class="pricing-button">
+              <a href="javascript:void(0);" onclick="showDriver()">운행 차량 및 기사님 확인</a>
+            </div>
+        </div>
       <div class="col-md-12">
         <div class="section-content text-center">
           <ul>
@@ -267,11 +308,6 @@
               </div>
             </div>
             <div class="col-md-3">
-              <!-- <div class="team-detail wow bounce" data-wow-delay="1.1s"> <img src="images/team/nayoung.png" class="img-fluid" style="max-width: 200px; height: auto;"/>
-                <h4>이나영</h4>
-                <p>CTO</p>
-                <p>고려대학교 인공지능연구실 석사 과정<br>앱 개발 및 최적화</p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -457,6 +493,13 @@
 <!-- scrollIt js --> 
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
+
+<script> 
+  function showDriver() {
+  console.log("showDriver function is loaded.");
+  window.location.href = "./showdriver.html";
+}
+</script>
 <script>
 	wow = new WOW();
 	wow.init();

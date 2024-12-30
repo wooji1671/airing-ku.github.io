@@ -3,8 +3,80 @@
 	margin:0;
 	
 }
+/* <body>
 
+	<style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h3 {
+            font-size: 24px;
+            color: #818992;
+            margin: 10px 0;
+        }
+
+        .pricing-card h1 {
+            font-size: 48px;
+            color: #000;
+            margin: 10px 0;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .pricing-card ul li {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .pricing-card button {
+            background: #f04747;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .pricing-card button:hover {
+            background: #c68b8b;
+        }
+	</style>
+</body> */
+
+.row{
+	padding: 10px auto 0 auto;
+
+}
 body {
 	font-family: 'Pretendard', sans-serif;
 	font-size: 14px;
@@ -139,7 +211,7 @@ h6 {
 }
 .banner {
 	background: #100F16;
-	/* background: linear-gradient(to left, #100F16, #000000); */
+	/* background: linear-gradient(to right, #191627, #100F16); */
 	padding:140px 0px 120px 0px;
 	position:relative;
 }
@@ -190,11 +262,11 @@ h6 {
 	position:relative
 }
 .section-padding {
-	padding:80px 0px 40px; 
+	padding:70px 0px 40px; 
 }
 .sectioner-header {
 	width:69%;
-	margin: 0 auto;
+	margin: 30px auto 10px auto;
 }
 .line {
 	height: 2px;
@@ -354,6 +426,73 @@ h6 {
 	line-height: 50px;
 	border: 1px solid #376FFF;
 }
+
+.pricing-container {
+	font-family: 'Pretendard', sans-serif;
+    display: flex;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #d1d9e6; /* 조금 더 강조된 테두리 색상 */
+    border-radius: 12px; /* 더 부드러운 모서리 */
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* 더 깊은 그림자 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px); /* 약간 위로 떠오르는 효과 */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 */
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    color: #818992;
+    margin: 10px 0;
+}
+
+.pricing-card h1 {
+    font-size: 30px;
+    color: #000;
+    margin: 10px 0;
+	padding: 2px auto 2px auto;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 2px auto 2px auto;
+    margin: 0px 0;
+}
+
+.pricing-card ul li {
+    font-size: 16px;
+    color: #000;
+    /* margin: 0px 0px 0px; */
+	text-align: center; /* 추가: 수직 가운데 정렬 */
+
+}
+
+.pricing-button a:hover {
+    background: #2c55bd !important;
+}
+
+.pricing-button a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background:  #27254e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+	cursor: pointer; /* 클릭 가능한 상태 추가 */
+}
+
+
 .team {
 	background: #fafafa;
 	border-top: 1px solid #e4e4e4;
@@ -545,7 +684,7 @@ input {
 }
 .download {
 	background: #100F16;
-	padding:80px 0px;
+	padding: 40px 0px;
 	position:relative;
 }
 .download::before {
