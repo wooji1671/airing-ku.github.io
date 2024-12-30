@@ -15,11 +15,18 @@ a {
 a:hover {
 	color:#100F16;
 }
-h1, h2, h3 {
+h1, h2 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight: 700;
 	font-size: 45px
 }
+
+h3 {
+	font-family: 'Pretendard', sans-serif;
+	font-weight: 700;
+	font-size: 38px
+}
+
 h4, h5 {
 	font-family: 'Pretendard', sans-serif;
 	font-weight:600;
@@ -207,7 +214,7 @@ h6 {
 }
 .sectioner-header p {
 	color:#818992;
-	font-size: 17px;
+	font-size: 17.5px;
 }
 .section-content {
 	margin-top: 50px;
@@ -502,7 +509,8 @@ input {
 	display: flex; 
 	align-items: center;
 	justify-content: space-between;
-	margin:20px 8px;
+	margin: 15px 8px;
+	font-size: 14px;
 }
 
 .contact-item .media-body {
@@ -510,7 +518,7 @@ input {
 	text-align: left; /* 텍스트를 왼쪽 정렬 */
   }
 .contact-item i {
-	font-size: 24px; /* 아이콘 크기 */
+	font-size: 22px; /* 아이콘 크기 */
 	margin-left: 15px; /* 텍스트와 아이콘 사이의 간격 */
 	text-align: left; /* 아이콘 오른쪽 정렬 */
 	display: column;
@@ -528,6 +536,7 @@ input {
 	display: flex;
 	flex-direction: column; /* 텍스트들 세로 정렬 */
 	text-align: left;
+	font-size: 20px;
   }
 
 .contact-item p {
@@ -612,17 +621,17 @@ input {
         font-size: 18px; /* 글씨 크기 조정 */
     }
 	h1 {
-        font-size: 28px; /* 헤딩 크기 적절히 설정 */
+        /* font-size: 28px; 헤딩 크기 적절히 설정 */
         margin: 10px 0; /* 상하 여백 추가 */
     }
 
 	h2 {
-        font-size: 12px; /* 적절한 크기로 수정 */
+        /* font-size: 12px; 적절한 크기로 수정 */
         margin: 10px 0; /* 상하 여백 추가 */
     }
 
     h3 {
-        font-size: 10px;
+        /* font-size: 10px; */
         margin: 8px 0; /* 상하 여백 추가 */
     }
 
@@ -706,6 +715,10 @@ input {
 .footer-copy p {
 	font-size: 5px;
 }
+}
+
+.video-section t img {
+	background-image: "images/video-m.png";
 }
 
 body, html {
