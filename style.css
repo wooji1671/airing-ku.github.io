@@ -740,50 +740,78 @@ input {
 	cursor:pointer;
 }
 .contact-info {
-	padding: 2rem 2rem 1rem;
+	padding: 20px 2rem 2rem 40px;
 	border-radius: 8px;
 	background: #100F16;
 	background: linear-gradient(to right, #100F16, #100F16);
 	gap: 20px;
 }
+.contact-container {
+	background-color: #100F16; /* 배경색 */
+	color: #ffffff; /* 텍스트 색상 */
+	padding: 30px 20px;
+	border-radius: 10px; /* 둥근 모서리 */
+	width: 320px; /* 컨테이너 너비 */
+  }
+  
 .contact-item {
-	display: flex; 
-	align-items: center;
-	justify-content: space-between;
-	margin: 15px 8px;
-	font-size: 14px;
-}
-
-.contact-item .media-body {
-	flex: 10; /* 텍스트 영역을 최대한 늘림 */
-	text-align: left; /* 텍스트를 왼쪽 정렬 */
-  }
-.contact-item i {
-	font-size: 22px; /* 아이콘 크기 */
-	margin-left: 15px; /* 텍스트와 아이콘 사이의 간격 */
-	text-align: left; /* 아이콘 오른쪽 정렬 */
-	display: column;
-	align-items: left; /* 아이콘 세로 중앙 정렬 */
-  }
-
-.contact-item .media-body {
 	display: flex;
-	flex-direction: column; /* 텍스트를 세로 정렬 */
-	justify-content: center; /* 텍스트를 세로 중앙 정렬 */
-	text-align: left; /* 텍스트를 왼쪽 정렬 */
+	align-items: flex-start; /* 아이콘과 텍스트를 수평 중앙 정렬 */
+	margin-bottom: 20px; /* 항목 간 간격 */
+	/* padding: auto 50px auto 30px; */
+	gap: 6px;
   }
-
+  
+.contact-item:last-child {
+	margin-bottom: 0; /* 마지막 항목 간 간격 제거 */
+  }
+  
+.contact-item i {
+	width: 30px; /* 아이콘 고정 너비 */
+	height: 30px; /* 아이콘 고정 높이 */
+	font-size: 22px; /* 아이콘 크기 */
+	color: #ffffff; /* 아이콘 색상 */
+	display: flex;
+	justify-content: center; /* 아이콘을 가운데 정렬 */
+	align-items: center;
+	margin-right: 20px; /* 아이콘과 텍스트 간 간격 */
+	margin-left: 10px;
+  }
+  
 .contact-text {
 	display: flex;
-	flex-direction: column; /* 텍스트들 세로 정렬 */
-	text-align: left;
-	font-size: 20px;
+	flex-direction: column; /* 텍스트를 세로 정렬 */
+	align-items: flex-start; /* 텍스트를 왼쪽 정렬 */
+	text-align: left; /* 내부 텍스트도 왼쪽 정렬 */
+  }
+  
+.contact-text p {
+	font-size: 14px; /* 제목 글씨 크기 */
+	line-height: 1.5; /* 텍스트 간격 조정 */
+	margin: 0; /* 불필요한 여백 제거 */
+	text-align: left; /* 텍스트 정렬 */
+	color: #ffffff; /* 제목 텍스트 색상 */
+  }
+  
+.contact-text span {
+	font-size: 14px; /* 세부 정보 글씨 크기 */
+	line-height: 1.5; /* 텍스트 간격 조정 */
+	color: #ffffff; /* 세부 정보 텍스트 색상 */
+	margin: 0;
+  }
+  
+.contact-text a {
+	font-size: 14px; /* 세부 텍스트 글씨 크기 */
+	line-height: 1.5; /* 텍스트 간격 조정 */
+	color: #ffffff; /* 링크 색상 */
+	text-decoration: none; /* 기본 밑줄 제거 */
+  }
+  
+.contact-text a:hover {
+	text-decoration: underline; /* 호버 시 밑줄 표시 */
   }
 
-.contact-item p {
-	line-height: 20px;
-	margin: 0;
-}
+
 .download {
 	background: #100F16;
 	padding: 40px 0px;
