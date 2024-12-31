@@ -5,7 +5,7 @@
 	
 	
 }
-.col-md-12 {
+.col-md-14 {
 	margin: 30px auto 30px auto;
 }
 
@@ -109,12 +109,20 @@
 
 
   
+.feature-mobile {
+	display: flex; /* Flexbox로 설정 */
+	justify-content: center; /* 수평 가운데 정렬 */
+	align-items: center; /* 수직 가운데 정렬 */
+	flex-direction: column; /* 요소를 수직 방향으로 배치 */
+	padding: 20px 0 20px; /* 위, 아래 여백 추가 */
+	height: 100%; /* 부모 높이에 맞춤 */
+	margin: 0 0 40px 0;
+  }
+  
 .feature-mobile img {
 	max-width: 100%; /* 이미지 크기 제한 */
-	height: auto;
-	margin: 20px 0 20px 0; /* 가운데 정렬 */
-	align-content: center;
-	justify-content: center;
+	height: auto; /* 이미지 비율 유지 */
+	margin: 0 auto; /* 여백 초기화 */
   }
   
 
@@ -259,7 +267,7 @@ h6 {
 .banner {
 	background: #100F16;
 	/* background: linear-gradient(to right, #191627, #100F16); */
-	padding:140px 0px 120px 0px;
+	padding:130px 0px 120px 0px;
 	position:relative;
 }
 .banner::before {
@@ -312,21 +320,18 @@ h6 {
 	padding: 40px auto 40px auto; 
 	
 }
-.sectioner-header {
+.sectioner-header-1 {
 	width:69%;
-	margin: 60px auto 20px auto;
-	padding:40px auto 40px auto; 
+	margin: 40px auto 40px auto;
+	padding:40px auto 100px auto; 
 }
 .sectioner-header-2 {
 	width:69%;
-	margin: 30px auto 30px auto;
-	padding:40px auto 40px auto; 
+	margin: 80px auto 40px auto;
+	padding:40px auto 10px auto; 
 }
-.sectioner-header-3 {
-	width:69%;
-	margin: 0px auto 30px auto;
-	padding:40px auto 40px auto; 
-}
+
+
 .line {
 	height: 2px;
 	width: 50px;
@@ -346,6 +351,17 @@ h6 {
 .sectioner-header p {
 	color:#818992;
 	font-size: 17.5px;
+
+}
+.sectioner-header-1 p {
+	color:#818992;
+	font-size: 17px;
+
+}
+.sectioner-header-2 p {
+	color:#818992;
+	font-size: 17px;
+	padding: 10px auto 20px auto;
 
 }
 .section-content {
@@ -458,23 +474,24 @@ h6 {
 	height: 100%;
 }
   
-.media-left {
-	margin-right: 15px; /* 아이콘과 텍스트 간의 간격 */
-  }
-  
+/* .media-left {
+	margin-right: 15px; 아이콘과 텍스트 간의 간격
+  } */
+/*   
 .media-left img {
-	height: 50px; /* 아이콘 크기 */
-  }
+	height: 50px; 아이콘 크기
+  } */
   
 .media-content h5 {
-	margin: 0 0 5px 0; /* 제목의 간격 조정 */
+	margin: 0 0 0px 0; /* 제목의 간격 조정 */
 	align-items: left;
 	font-size: 14px;
   }
   
 .media-content p {
-	margin: 0; /* 텍스트 여백 제거 */
+	margin: 10px; /* 텍스트 여백 제거 */
 	align-items: left;
+	font-size: 10px
   }
 
 .icon-border {
@@ -525,7 +542,7 @@ h6 {
 .pricing-card h3 {
     font-size: 23px;
     color: #818992;
-	margin: 5px auto 5px auto;
+	margin: 5px auto 20px auto;
 	padding: 5px auto 5px auto;
 }
 
@@ -539,14 +556,15 @@ h6 {
 .pricing-card ul {
     list-style: none;
     padding: 2px auto 0px auto;
-    /* margin: 4px auto 0px auto; */
+    margin: 4px auto 0px auto;
 }
 
 .pricing-card ul li {
-    font-size: 16px;
+    font-size: 15px;
+	font-weight: 450;
     color: #000;
     margin: 15px auto 0px auto;
-	padding: 1px auto 0px auto;
+	padding: 10px auto 0px auto;
 	text-align: center; /* 추가: 수직 가운데 정렬 */
 	justify-items: center;
 
@@ -639,17 +657,22 @@ h6 {
 	align-items: center; */
 	width: 19%;
 	margin-left: 1%;
-	margin-top: 1%;
+	padding-top: 1%;
 	margin-right:1%;
 }
 .test-text {
 	float: center;
 	width: 100%;
 }
+
+.test-text p {
+	padding: 0 0;
+	margin: 5px 15px 5px 5px
+}
 .slider .title {
 	display: block;
 	position: relative;
-	margin: 8px 0 18px;
+	margin: 5px 0 18px;
 	font-size: 1.3em;
 	line-height: 1.25;
 	font-family: 'Pretendard', sans-serif;
@@ -659,6 +682,7 @@ h6 {
 	font-size: 1.5em;
 	font-weight: 700;
 	font-family: 'Pretendard', sans-serif;
+	margin: 0px;
 }
 .faq {
 	background: #fafafa;
@@ -741,7 +765,7 @@ input {
 	display: column;
 	align-items: left; /* 아이콘 세로 중앙 정렬 */
   }
-  
+
 .contact-item .media-body {
 	display: flex;
 	flex-direction: column; /* 텍스트를 세로 정렬 */
@@ -762,8 +786,7 @@ input {
 }
 .download {
 	background: #100F16;
-	padding: 70px auto 70px auto;
-	/* margin: 30px auto 30px auto; */
+	padding: 40px 0px;
 	position:relative;
 }
 .download::before {
@@ -781,7 +804,7 @@ input {
 }
 .download ul li {
 	display: inline-block;
-	margin: 3px auto 3px auto;
+	margin: 0px 10px 10px 0px;
 }
 .download ul li a {
 	display: block;
@@ -789,9 +812,6 @@ input {
 .download ul li a img {
 	width: 150px;
 	border-radius: 7px;
-} 
-.download p{
-
 }
 .footer-copy {
 	background: #ffffff;
@@ -802,6 +822,11 @@ input {
 }
 .footer-copy p {
 	margin-bottom:0px;
+}
+
+.col-md-13{
+
+
 }
 @media all and (max-width:100%) {
 .navbar .navbar-collapse {
@@ -874,6 +899,9 @@ input {
 }
 .sectioner-header p {
 	font-size: 14px;
+}
+.sectioner-header-2 p {
+	font-size: 17px;
 }
 .about-btn {
 	padding: 5px 30px;
