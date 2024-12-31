@@ -327,8 +327,8 @@ h6 {
 }
 .sectioner-header-2 {
 	width:69%;
-	margin: 80px auto 40px auto;
-	padding:40px auto 10px auto; 
+	margin: 65px auto 40px auto;
+	padding: 40px auto 10px auto; 
 }
 
 
@@ -967,7 +967,9 @@ input {
 	width: 100%;
 	text-align: center;
 	/* text-align: center; */
+
 }
+
 .section-content {
 	/* margin-top: 10px; */
 	align-items: center;
