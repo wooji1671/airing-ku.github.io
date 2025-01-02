@@ -9,7 +9,7 @@
 } */
 
 .col-sm-12 {
-	margin: 5px 0px auto 0px; 
+	/* margin: 5px 20px auto 50px;  */
 	align-items: center;
 }
 /* .col-md-12 p {
@@ -423,26 +423,15 @@ h6 {
 	display: none !important;
 }
 
-@media (min-width: 768px) {
-	.web-banner {
-		display: block !important;
-	}
-}
-@media (max-width: 767px) {
-
-	.mobile-banner {
-	  display: block !important;
-	}
-  }
 
 
-.video-section {
+/* .video-section {
 	/* background: url(images/video-bg.png) no-repeat fixed center; */
 	/* background: url(images/pattern.png); */
-	background-size: cover;
-	overflow: hidden;
-}
-.video-overlay {
+	/* background-size: cover;
+	overflow: hidden; */
+
+/* .video-overlay {
 	background: linear-gradient(to left, #100F16, #100F16);
 }
 .video-section h3 {
@@ -477,8 +466,8 @@ h6 {
 	align-items: center !important;
 	-ms-flex-pack: center !important;
 	justify-content: center !important;
-}
-.video-popup .video-src {
+} */
+/* .video-popup .video-src {
 	position: relative;
 	width: 700px;
 	max-width: 80%;
@@ -497,7 +486,7 @@ h6 {
 	width: 100%;
 	height: 100%;
 }
-  
+   */
 /* .media-left {
 	margin-right: 15px; 아이콘과 텍스트 간의 간격
   } */
@@ -884,147 +873,6 @@ input {
 /* @media * {
 	font-family: 'Pretendard', sans-serif;
 } */
-@media all and (max-width:100%) {
-.navbar .navbar-collapse {
-	width: 100%;
-	position: fixed;
-	overflow: auto;
-	/* background:  rgb(74, 41, 92); */
-	color: #fff !important;
-	text-align: center;
-	/* padding: 10px 0 0 100px; */
-	/* transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease; */
-	align-items: center;
-}
-.nav-scroll .navbar-collapse {
-	background: #fff !important;
-}
-
-/* element.style {
-	height: auto;
-	width: 100%;
-	align-items: center;
-} */
-
-#contact_form {
-	margin-bottom:5px;
-}
-}
-@media all and (max-width: 50%) {
-    .nav-scroll .navbar-brand img, .navbar-brand img {
-        transform: scale(1) !important;
-        -webkit-transform: scale(1) !important; /* 스케일을 동일하게 설정 */
-        max-width: 100px; /* 이미지 크기 고정 */
-	}
-
-    .banner-text {
-        padding: 20px 10px; /* 상하 20px, 좌우 10px */
-        margin: 10px 10px; /* 상하좌우 10px */
-        font-size: 18px; /* 글씨 크기 조정 */
-    }
-	h1 {
-        /* font-size: 28px; 헤딩 크기 적절히 설정 */
-        margin: 10px 0; /* 상하 여백 추가 */
-    }
-
-	h2 {
-        /* font-size: 12px; 적절한 크기로 수정 */
-        /* margin: 10px 0; 상하 여백 추가 */
-    }
-
-    h3 {
-        /* font-size: 10px; */
-        /* margin: px 0; 상하 여백 추가 */
-    }
-
-    .section-padding {
-        padding: 60px 1px; /* 상하 40px, 좌우 15px */
-    }
-
-    .banner-text p {
-        margin: 00px 0; /* 글씨 주변 여백 수정 */
-        font-size: 16px; /* 텍스트 크기 조정 */
-    }
-.banner-text ul li a img {
-	width: 120px;
-	border-radius: 10px;
-}
-.sectioner-header {
-	width: 100%;
-	padding: 0px 0px;
-}
-.sectioner-header p {
-	font-size: 14px;
-}
-.sectioner-header-2 p {
-	font-size: 17px;
-}
-.about-btn {
-	padding: 5px 30px;
-	margin-top: 0px;
-	font-size: 16px;
-}
-.single-feature {
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-.team-detail {
-	margin-top: 20px;
-}
-.team-detail img {
-	width: 50%;
-}
-.bx-controls
-{
-	display:none;
-}
-.bx-wrapper {
-	margin: 0px 20px !important;
-}
-.slider .test-img img {
-	margin: 0 auto;
-}
-.test-img {
-	float:none;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-}
-.test-text {
-	float: none;
-	width: 100%;
-	text-align: center;
-	/* text-align: center; */
-
-}
-
-.section-content {
-	/* margin-top: 10px; */
-	align-items: center;
-	/* padding: 0 101 0 */
-}
-.faq-content {
-	margin: 10px 0px;
-}
-.faq-content h4 {
-	font-size: 16px;
-}
-.faq-content p {
-	font-size: 13px;
-}
-#contact_form {
-	margin-bottom:20px;
-}
-.contact-item {
-	font-size: 12px;
-}
-.download ul li a img {
-	width: 120px;
-}
-.footer-copy p {
-	font-size: 5px;
-}
-}
 
 .video-section t img {
 	background-image: "images/video-m.png";
