@@ -542,7 +542,7 @@ h6 {
     border-radius: 12px; /* 더 부드러운 모서리 */
     text-align: center;
     padding: 20px;
-    width: 240px;
+    width: 235px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* 더 깊은 그림자 */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -568,7 +568,7 @@ h6 {
 
 .pricing-card ul {
     list-style: none;
-    padding: 2px auto 0px auto;
+    padding: 2px auto 10px auto;
     /* margin: 4px auto 0px auto; */
 }
 
@@ -576,7 +576,7 @@ h6 {
     font-size: 15px;
 	font-weight: 450;
     color: #000;
-    margin: 15px auto 0px auto;
+    margin: 5px auto 0px auto;
 	padding: 10px auto 0px auto;
 	text-align: center; /* 추가: 수직 가운데 정렬 */
 	justify-items: center;
@@ -585,8 +585,8 @@ h6 {
 
 .button a {
     display: inline-block;
-    margin-top: 18px;
-    padding: 10px 20px;
+    margin-top: 0px;
+    padding: 10px 10px;
     background: #27254e;
     color: #fff;
     text-decoration: none;
