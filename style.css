@@ -417,6 +417,25 @@ h6 {
 	color:#ffffff;
 	text-decoration:none;
 }
+
+.mobile-banner
+.web-banner {
+	display: none !important;
+}
+
+@media (min-width: 768px) {
+	.web-banner {
+		display: block !important;
+	}
+}
+@media (max-width: 767px) {
+
+	.mobile-banner {
+	  display: block !important;
+	}
+  }
+
+
 .video-section {
 	/* background: url(images/video-bg.png) no-repeat fixed center; */
 	/* background: url(images/pattern.png); */
