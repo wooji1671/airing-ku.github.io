@@ -152,7 +152,7 @@ h3 {
 }
 
 h4 {font-family: 'Pretendard', sans-serif;
-	font-weight:550;
+	font-weight:700;
 	font-size: 28px
 }
 
@@ -326,9 +326,9 @@ h6 {
 	
 }
 .sectioner-header-1 {
-	width:69%;
-	margin: 40px auto 40px auto;
-	padding:40px auto 100px auto; 
+	/* width:69%; */
+	padding: 40px 10px 40px auto; 
+	/* padding:40px auto 100px auto;  */
 }
 .sectioner-header-2 {
 	width:69%;
